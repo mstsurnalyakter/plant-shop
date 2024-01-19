@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="corporate">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Plant Shop Website</title>
+    <link rel="shortcut icon" href="./images/Frame-4.png" type="image/x-icon" />
+
+    <!-- Tailwind css and daisy ui link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- custom css -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              clifford: "#da373d",
+              'border-radius': "200px 200px 0px 200px",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <!-- header section -->
+    <header class="w-10/12 mx-auto p-8 mb-24">
+        <!-- navbar section -->
+      <nav class="mb-8">
+        <div class="navbar bg-base-100">
+          <div class="flex-1">
+            <a class="text-xl lg:text-4xl mr-10">GREENMIND</a>
+            <section class="flex gap-10 text-xl">
+              <a href="#">Home</a>
+              <a href="#">Products</a>
+              <a href="#">Contacts</a>
+            </section>
+          </div>
+
+          <div class="flex-none">
+            <div class="dropdown dropdown-end">
+              <div class="">
+
+                <button class="btn btn-ghost btn-circle">
+                  <img src="./images/Cart.png" alt="">
+                </button>
+
+                <button class="btn btn-ghost btn-circle">
+                  <img src="./images/Person.png" alt="">
+                </button>
+
+                <button class="btn btn-ghost btn-circle">
+                  <img src="./images/Line.png" alt="">
+                </button>
+
+
+              </div>
+            </div>
+
+            <div class="dropdown dropdown-end">
+              <div class="">
+                <div class="dropdown">
+                  <div
+                    tabindex="0"
+                    role="button"
+                    class="btn btn-ghost btn-circle"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-5 w-5"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke="currentColor"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h7"
+                      />
+                    </svg>
+                  </div>
+                  <ul
+                    tabindex="0"
+                    class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                  >
+                    <li><a>Home</a></li>
+                    <li><a>Products</a></li>
+                    <li><a>Contacts</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+
+      <!-- hero section -->
+      <div class="hero flex justify-around  bg-[#C1DCDC] rounded-lg pt-12 gap-10">
+  <div class="hero-content flex-col lg:flex-row-reverse">
+    <section class="w-96 h-96 bg-black rounded-tl-full rounded-tr-full rounded-bl-full relative top-4 flex-1">
+        <img src="./images/frame-1.png" class="max-w-sm rounded-lg relative bottom-20 left-6" />
+    </section>
+    <div class="flex-1">
+      <h1 class="text-xl lg:text-5xl font-bold">Buy your dream plants</h1>
+      <p class="py-6">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+      <button class="btn btn-primary">Get Started</button>
+    </div>
+  </div>
+</div>
+
+
+    </header>
+
+    
+  </body>
+</html>
